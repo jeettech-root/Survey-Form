@@ -1,0 +1,120 @@
+/* General page styling */
+body {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #9face6);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container for the form */
+form {
+    background: #838df5;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    max-width: 450px;
+    width: 100%;
+}
+
+/* Headings */
+h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 2rem;
+}
+
+h1:hover {
+    color: #6c63ff;
+}
+
+p {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #555;
+}
+p:hover{
+    color: #6c63ff;
+}
+
+/* Labels */
+label {
+    display: block;
+    font-weight: 600;
+    margin: 12px 0 6px;
+    color: #333;
+}
+
+/* Input, select, textarea */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+    outline: none;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: #6c63ff;
+    box-shadow: 0 0 4px rgba(108, 99, 255, 0.5);
+}
+
+/* Radio & checkbox styling */
+input[type="radio"],
+input[type="checkbox"] {
+    margin-right: 8px;
+    accent-color: #6c63ff;
+    /* modern browsers */
+}
+
+label input {
+    margin-left: 5px;
+    font-weight: normal;
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background: #6c63ff;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #5848d4;
+}
+
+/* Textarea */
+textarea {
+    resize: none;
+}
+
+/* Extra responsiveness */
+@media (max-width: 500px) {
+    form {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+}
